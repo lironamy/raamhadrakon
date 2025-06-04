@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.ico" />
+    <meta property="og:image" content="images/whatsupIcon.ico">
+    <title>רעם הדרקון</title>
+    <meta name="description" content="במסע אחר נסיכת השמש"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("iuIsthnw5ghVlC5Eh");
+        })();
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="event-image">
+            <img class="logo" src="/images/LOGO.png" alt="Event Image">
+        </div>
+        <div class="container">
+            <h2>במופע השקה</h2>
+            <h3 class="Betzefer gold-gradient-text">לצאת האלבום</h3>
+            <h2>במסע אחר נסיכת השמש</h2>
+            <h1 class="gold-gradient-text">1.8.24</h1>
+            <h5>פתיחת דלתות 21:30</h5>
+            <a class="res glass" href="https://www.tmu-na.org.il/?CategoryID=102&ArticleID=5965" target="_blank">לרכישת כרטיסים לחצו כאן</a>
+            
+            
+            <div class="location">
+                <img class="LOGO_NUNA" src="/images/LOGO NUNA.png" alt="Location Image">
+                <div class="street">
+                    <span id="adress">רח' שונצינו 8</span>
+                    <span id="city">תל-אביב</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="desktop-footer">
+        
+        <form id="desktopForm">
+            <div class="beforeClick deskForm">
+                <h4 class="footer_text">רוצים קוד קופון? השאירו פרטים</h4>
+                <input type="text" id="name" name="name" placeholder="שם" required>
+                <input id="tel" type="tel" name="tel" placeholder="טלפון" required>
+                <input type="email" id="email" name="email" placeholder="מייל" required>
+                <button id="submitBtn" type="button" onclick="sendMail()">שלחו ></button>
+            </div>
+            
+            <div class="afterClick">
+                <h4>דרקון חדש נולד</h4>
+            </div>
+        </form>
+    </footer>
+
+    <footer class="mobile-footer" onclick="toggleForm()">
+        <h4 class="footer_text beforeClick">רוצים קוד קופון? השאירו פרטים</h4>
+        <div class="form-container" id="formContainer">
+            <div class="closeBtn" onclick="closeForm()">X</div>
+            <h4 class="footer_text beforeClick">רוצים קוד קופון? השאירו פרטים</h4>
+            <form id="mobileForm">
+                <div class="beforeClick">
+                    <input type="text" id="mobileName" name="name" placeholder="שם" required>
+                    <input id="mobileTel" type="tel" name="tel" placeholder="טלפון" required>
+                    <input type="email" id="mobileEmail" name="email" placeholder="מייל" required>
+                    <button id="mobileSubmitBtn" type="button" onclick="sendMail()">שלחו ></button>
+                </div>
+                
+                <div class="afterClick">
+                    <h4>דרקון חדש נולד</h4>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

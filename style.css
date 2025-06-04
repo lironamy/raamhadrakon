@@ -1,0 +1,443 @@
+@font-face {
+	font-family: 'FbSpoilerPas';
+	src: url('./fonts/FbSpoilerPas-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FbSpoilerPas';
+	src: url('./fonts/FbSpoilerPas-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FbSpoilerPas';
+	src: url('./fonts/FbSpoilerPas-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Betzefer';
+	src: url('./fonts/betzefer.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: black;
+	font-family: 'FbSpoilerPas', Arial, sans-serif;
+	direction: rtl;
+	text-align: center;
+	color: #e4e2e2;
+	background-image: url('/images/310524_RaamHadrakon_A4 Poster_BG_1920 × 960.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+footer {
+	background-color: rgb(190, 166, 110);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	text-align: center;
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+}
+
+footer form,
+.deskForm {
+	display: flex;
+	flex-direction: row !important;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+footer input {
+	border: 1px solid #e4e2e2;
+	border-radius: 20px;
+	background-color: rgb(190, 166, 110);
+	font-family: 'FbSpoilerPas', Arial, sans-serif;
+	padding: 10px 10px;
+	font-size: 20px;
+	color: white;
+}
+
+footer input::placeholder {
+	color: white;
+}
+
+#submitBtn,
+#mobileSubmitBtn {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 80px;
+	font-family: 'FbSpoilerPas', Arial, sans-serif;
+	font-size: 15px;
+	transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+	background-color: #3b3838;
+}
+
+.logo {
+	width: 70%;
+}
+
+.Betzefer {
+	font-family: 'Betzefer', Arial, sans-serif;
+	font-size: 3rem;
+}
+
+#tel,
+#mobileTel {
+	direction: rtl;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: bold;
+	font-family: Playfair Display, Arial, sans-serif;
+
+}
+
+.gold-gradient-text {
+	background-image: linear-gradient(25deg, #f6f2de, #e69a0e);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.res {
+	font-size: 2rem;
+	font-weight: 500;
+	border: 1px solid #e4e2e2;
+	border-radius: 50px;
+	display: inline-flex;
+	padding: 5px 25px;
+	margin-bottom: 20px;
+	font-size: 2rem;
+	font-weight: 500;
+	color: #f6f2de;
+	text-shadow:  0 0 20px #fff, 0 0 25px #e69a0e, 0 0 35px #e69a0e, 0 0 45px #e69a0e, 0 0 55px #e69a0e, 0 0 75px #e69a0e;
+
+}
+
+
+
+
+
+
+
+
+
+
+.street {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+span {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+#city {
+	letter-spacing: 14px;
+	margin-right: 1px;
+}
+
+#adress {
+	letter-spacing: 1px;
+	margin-right: 17px;
+}
+
+.location {
+	margin-top: 20px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #e4e2e2;
+	padding: 10px;
+}
+
+.LOGO_NUNA {
+	width: 200px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.footer_text {
+	margin-left: 20px;
+	font-weight: 400;
+
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-image: url('/images/310524_RaamHadrakon_A4\ Poster_BG_640\ ×\ 1080.webp');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+    
+    h5 {
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.Betzefer {
+		font-size: 1.5rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.main {
+		margin-top: 0;
+		flex-direction: column;
+		overflow: hidden;
+		margin-bottom: 30px;
+
+	}
+
+	.logo {
+		margin-top: 0;
+		width: 60%;
+	}
+
+	.res {
+		font-size: 1.5rem;
+		margin-bottom: 0;
+	}
+
+	.location {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		margin-top: 10px;
+	}
+
+	span {
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
+
+	#city {
+		letter-spacing: 11px;
+		margin-right: 1px;
+	}
+
+	.LOGO_NUNA {
+		width: 150px;
+		margin-bottom: 10px;
+	}
+
+
+
+	.footer_text {
+		margin: 0;
+	}
+
+	footer form {
+		flex-direction: column;
+	}
+
+	footer input {
+		width: 100%;
+	}
+
+	#submitBtn,
+	#mobileSubmitBtn {
+		width: 100%;
+		font-size: 20px;
+
+	}
+
+	footer form {
+		display: none;
+	}
+}
+
+
+
+
+
+/* Hide mobile footer on larger screens */
+.mobile-footer {
+	display: none;
+}
+
+/* Show regular footer on larger screens */
+
+
+@media only screen and (max-width: 600px) {
+
+	/* Hide regular footer on smaller screens */
+	.desktop-footer {
+		display: none;
+	}
+
+	/* Show mobile footer on smaller screens */
+	.mobile-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+    
+}
+
+
+.closeBtn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+	background-color: transparent;
+	border: none;
+
+}
+
+
+
+
+.form-container {
+	position: fixed;
+	bottom: -100%;
+	left: 0;
+	right: 0;
+	background-color: rgb(190, 166, 110);
+	color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: bottom 0.5s ease;
+	z-index: 999;
+
+}
+
+.form-container.open {
+	transition: bottom 0.5s ease;
+	z-index: 999;
+	top: 50%;
+	bottom: 0;
+
+}
+
+
+.form-container img {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.form-container form,
+.beforeClick {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+}
+
+
+footer input.error {
+	border-color: red;
+}
+
+footer input.error::placeholder {
+	color: red;
+}
+
+.afterClick {
+	display: none;
+}
+
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* a glass effect */
+
+
+/* a glass shiny hover effect */
+
+.glass:hover {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+
+}
+
+
+/* .res:hover {
+	
+	font-size: 2rem;
+	font-weight: 500;
+	color: #f6f2de;
+	text-shadow: 0 0 5px #f6f2de, 0 0 10px #f6f2de, 0 0 15px #f6f2de, 0 0 20px #e69a0e, 0 0 30px #e69a0e, 0 0 40px #e69a0e, 0 0 55px #e69a0e, 0 0 75px #e69a0e;
+	
+} */
+
+
